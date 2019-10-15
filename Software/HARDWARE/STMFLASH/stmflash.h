@@ -22,6 +22,10 @@
 
 //FLASH起始地址
 #define STM32_FLASH_BASE 0x08000000 	//STM32 FLASH的起始地址
+
+
+#define FLASH_SAVE_ADDR  0X08010000		//STM32 FLASH 模拟eeprom地址
+
  
  
 
