@@ -13,18 +13,6 @@
 //All rights reserved									  
 ////////////////////////////////////////////////////////////////////////////////// 
 
-#define ADC_Voltage_CH 	ADC_Channel_0
-#define ADC_NTC1_CH    	ADC_Channel_1
-#define ADC_NTC2_CH    	ADC_Channel_2
-#define ADC_Current_CH  ADC_Channel_6
-#define ADC_REF_2V5_CH 	ADC_Channel_7
-
-#define ADC_Average_times 	 50
-#define ADC_Voltage_Divider  30
-#define Voltage_REF          250  //实际电压放大100倍
-#define ADC_Current_Gain     10   //采样电阻2.5mR,运放放大10倍给到ADC
-
-
 void Adc_Init(void);
 u16  Get_Adc(u8 ch); 
 u16 Get_Adc_Average(u8 ch,u8 times); 
