@@ -75,26 +75,13 @@ void TIM3_IRQHandler(void)   //TIM3中断
 			temp4_val = temp4_val/ADC_Average_times;
 			temp5_val = temp5_val/ADC_Average_times;
 			 
-			ADC_Value1.ADC_Voltage = (u16)(Voltage_REF*temp1_val*ADC_Voltage_Divider)/temp5_val;   //电源输入电压*100倍
+			ADC_Value1.ADC_Voltage = (u16)Voltage_REF*temp1_val*ADC_Voltage_Divider/temp5_val;   //电源输入电压
 			ADC_Value1.ADC_NTC1    = temp2_val;
 			ADC_Value1.ADC_NTC2    = temp3_val;
-			ADC_Value1.ADC_REF_2V5 = temp5_val;
-												 //运放参考电压1.5V为2.5V的3/5
-			if(temp4_val>(temp5_val*3/5 + 20))	//考虑采样误差，需要+20确保有一段电压值表示空闲
-			{
-				ADC_Value1.Bat_Status = Bat_Discharging;
-				ADC_Value1.ADC_Current = (u16)(Voltage_REF*(temp4_val-temp5_val*3/5)*400)/(temp5_val*ADC_Current_Gain);	//采样电阻R=0.0025R，1/R=400					
-			}
-			else if(temp4_val<(temp5_val*3/5 - 20))  ////考虑采样误差，需要-20确保有一段电压值表示空闲
-			{
-				ADC_Value1.Bat_Status = Bat_Charging;
-				ADC_Value1.ADC_Current = (u16)(Voltage_REF*(temp5_val*3/5-temp4_val)*400)/(temp5_val*ADC_Current_Gain);	//采样电阻R=0.0025R，1/R=400			
-			}
-			else
-			{
-				ADC_Value1.Bat_Status = Bat_Idle;
-				ADC_Value1.ADC_Current = 0;
-			}
+			ADC_Value1.ADC_Current = 
+			ADC_Value1.ADC_REF_2V5 = temp5_val
+
+
 			
 			temp1_val = 0;
 			temp2_val = 0;

@@ -14,17 +14,12 @@
 //All rights reserved
 ////////////////////////////////////////////////////////////////////////////////// 
 
-#define Bat_Idle 		 0
-#define Bat_Discharging  1
-#define Bat_Charging 	 2	
-
 typedef struct
 {
 	u16 ADC_Voltage;
 	u16 ADC_NTC1;
 	u16 ADC_NTC2;
 	u16 ADC_Current;
-	u8  Bat_Status;
 	u16 ADC_REF_2V5;
 }ADC_Value;
 

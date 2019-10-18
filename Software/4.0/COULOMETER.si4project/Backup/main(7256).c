@@ -79,8 +79,13 @@ int main(void)
 
 
 
-		}				
-//		oled_update_display(test1);
+		}
+		temp = Get_Adc_Average(1,50);
+// 		temp = (temp*2501*20)/4096;
+//		printf("CH1=%d\n",temp);
+
+				
+		oled_update_display(test1);
 
 	}	 
 } 
