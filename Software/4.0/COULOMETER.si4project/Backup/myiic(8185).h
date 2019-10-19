@@ -20,10 +20,6 @@
 #define IIC_SDA    PBout(7) 		//SDA	 
 #define READ_SDA   PBin(7) 	 		//输入SDA 
 
-#define ACK     1
-#define NACK    0
-
-
  
 /* 定义的函数原型 */
 void IIC_IOInit(void);
