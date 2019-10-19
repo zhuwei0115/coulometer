@@ -29,7 +29,7 @@ typedef struct
 }ADC_Value;
 
 
-ADC_Value ADC_Value1;
+
 
 void TIM3_Int_Init(u16 arr,u16 psc); 
  

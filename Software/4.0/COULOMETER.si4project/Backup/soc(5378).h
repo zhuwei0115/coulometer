@@ -35,7 +35,7 @@ typedef struct{
 
 typedef struct{
 	u8  SOC;
-	u16 Current_Capacity;
+	u16 Capacity;
 }Bat_Status;
 
 
@@ -63,9 +63,8 @@ const OCV_Value_TypeDef  OcvTable_Dischg_1C[101] = {		   {4798, 0},
 //电压值*16后,除以10 四舍五入
 //adc电压放大了100倍，此处放大了1000倍，所以需要除以10
 
+u16 Bat_Capacity = 4000;	//40AH 放到100倍存储
 
-Bat_Status Get_OCV_SOC(ADC_Value * ADC_Value_Struct ,u16 Bat_Capacity);
-Bat_Status Get_Realtime_SOC(ADC_Value * ADC_Value_Struct , Bat_Status *Old_Status , u8 Interval , u16 Bat_Capacity);
-
+u8 Get_OCV_SOC(ADC_Value * ADC_Value_Struct);
 
 #endif
