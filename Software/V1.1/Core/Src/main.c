@@ -67,7 +67,7 @@ void SystemClock_Config(void);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-
+	uint8_t Value[2];
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -92,10 +92,10 @@ int main(void)
   MX_USART1_UART_Init();
   MX_TIM1_Init();
   /* USER CODE BEGIN 2 */
-//  printf("Hello, i am %s\n", "mculover666");
-  printf("Test int: i = %d", 100);
-  printf("Test float: i = %f", 1.234);
-  printf("Test hex: i = 0x%2x",100);
+  printf("Hello, i am %s\n\r", "mculover666");
+  printf("Test int: i = %d\n\r", 100);
+  printf("Test float: i = %f\n\r", 1.234);
+  printf("Test hex: i = 0x%2x\n\r",100);
 
   /* USER CODE END 2 */
 
@@ -108,6 +108,9 @@ int main(void)
 		HAL_Delay(500);
 		HAL_GPIO_TogglePin(LED1_GPIO_Port, LED1_Pin);
 		HAL_Delay(500);
+		
+		ADS1015_Read_nBytes(&Value, 0x1, 0x1);
+		printf("ADS1015 0x01 address value is : %d\n\r",Value);
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */

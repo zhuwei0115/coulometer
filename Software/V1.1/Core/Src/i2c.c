@@ -21,7 +21,8 @@
 #include "i2c.h"
 
 /* USER CODE BEGIN 0 */
-
+#define ADDR_ADS1015_Write 0x90
+#define ADDR_ADS1015_Read 0x91
 /* USER CODE END 0 */
 
 I2C_HandleTypeDef hi2c1;
@@ -115,6 +116,22 @@ void HAL_I2C_MspDeInit(I2C_HandleTypeDef* i2cHandle)
 
 /* USER CODE BEGIN 1 */
 
+
+int16_t ADS1015_Write_nBytes(uint8_t *data, uint16_t addr, uint16_t length)
+{
+    if( HAL_I2C_Mem_Write( &hi2c1, ADDR_ADS1015_Write, addr, I2C_MEMADD_SIZE_16BIT, data, length, 1000 ) == HAL_OK )
+        return 0;
+    else
+        return -1;
+}
+ 
+int16_t ADS1015_Read_nBytes(uint8_t *data, uint16_t addr, uint16_t length)
+{
+    if( HAL_I2C_Mem_Read( &hi2c1, ADDR_ADS1015_Write, addr, I2C_MEMADD_SIZE_16BIT, data, length, 1000 ) == HAL_OK )
+        return 0;
+    else
+        return -1;
+}
 /* USER CODE END 1 */
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

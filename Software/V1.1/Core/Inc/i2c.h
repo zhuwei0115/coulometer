@@ -40,6 +40,8 @@ extern I2C_HandleTypeDef hi2c1;
 void MX_I2C1_Init(void);
 
 /* USER CODE BEGIN Prototypes */
+int16_t ADS1015_Write_nBytes(uint8_t *data, uint16_t addr, uint16_t length);
+int16_t ADS1015_Read_nBytes(uint8_t *data, uint16_t addr, uint16_t length);
 
 /* USER CODE END Prototypes */
 
