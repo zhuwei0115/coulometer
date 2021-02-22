@@ -1,0 +1,45 @@
+(ExpressProject ""
+  (ProjectVersion "19981106")
+  (ProjectType "PCB")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File "f:\diy\01.coulometer\coulometer\hardware\v1.1\sch\library1.olb"
+        (Type "Schematic Library")))
+    (File ".\coulometer_board_v1.0.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (NoModify))
+  (Folder "Outputs")
+  (Folder "Referenced Projects")
+  (PartMRUSelector
+    (ACS724
+      (FullPartName "ACS724.Normal")
+      (LibraryName
+         "F:\DIY\01.COULOMETER\COULOMETER\HARDWARE\V1.1\SCH\LIBRARY1.OLB")
+      (DeviceIndex "0")))
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources" ".\coulometer_board_v1.0.dsn")
+      (Path "Design Resources" ".\coulometer_board_v1.0.dsn" "MULTI_FUNC_BOARD")
+      (Path "Design Resources" "Library")
+      (Select "Design Resources" ".\coulometer_board_v1.0.dsn"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -31 0 200 0 332"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 208 1856 208 773")
+        (Scroll "-329 0")
+        (Zoom "57")
+        (Occurrence "/"))
+      (Path
+         "F:\DIY\01.COULOMETER\COULOMETER\HARDWARE\V1.0\SCH\COULOMETER_BOARD_V1.0.DSN")
+      (Schematic "MULTI_FUNC_BOARD")
+      (Page "PAGE01 COULOMETER")))
+  (MPSSessionName "Administrator"))

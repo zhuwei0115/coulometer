@@ -1,0 +1,505 @@
+\t (00:00:07) allegro 17.4 S006 Windows SPB 64-bit Edition
+\t (00:00:07)     Journal start - Mon Jan 18 19:13:56 2021
+\t (00:00:07)         Host=ZHUWEI User=Administrator Pid=17024 CPUs=8
+\t (00:00:07) CmdLine= e:\cadence\cadence\cadence_spb_17.4-2019\tools\bin\allegro.exe F:\DIY\01.COULOMETER\coulometer\Hardware\V1.0\PCB\COULOMETER_BOARD_V1.0.brd
+\t (00:00:07) 
+   (00:00:08) Loading axlcore.cxt 
+\t (00:00:08) Opening existing design...
+\i (00:00:12) fillin yes 
+\i (00:00:13) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged COULOMETER_BOARD_V1.0
+\d (00:00:13) Design opened: F:/DIY/01.COULOMETER/coulometer/Hardware/V1.0/PCB/COULOMETER_BOARD_V1.0.brd
+\i (00:00:13) trapsize 28413
+\i (00:00:14) trapsize 29218
+\i (00:00:14) trapsize 22169
+\i (00:00:14) trapsize 22169
+\t (00:00:14) Begin Load EDA365 Skill...
+\t (00:00:14) >>EDA365 Skill V2.5 加载成功!
+\t (00:00:14) >>菜单快捷键CTRL+E
+\i (00:00:15) generaledit 
+\i (00:00:18) QtSignal ColorVisibilityPane CVPViewDropdown CurrentIndexChanged "Film: adt"
+\i (00:00:18) QtSignal ColorVisibilityPane CVPViewDropdown activated "Film: adt"
+\i (00:00:19) zoom in 1 
+\i (00:00:19) setwindow pcb
+\i (00:00:19) zoom in 801.303 952.767
+\i (00:00:19) trapsize 11084
+\i (00:00:19) zoom in 1 
+\i (00:00:19) setwindow pcb
+\i (00:00:19) zoom in 801.303 954.984
+\i (00:00:19) trapsize 5542
+\i (00:00:21) QtSignal CVPLayerGrid CVPBoxAllTop clicked true
+\i (00:00:22) zoom out 1 
+\i (00:00:22) setwindow pcb
+\i (00:00:22) zoom out 2120.344 1193.298
+\i (00:00:22) trapsize 11084
+\i (00:00:23) roam start
+\i (00:00:23) roam x -16
+\i (00:00:23) roam y -80
+\i (00:00:23) roam x -16
+\i (00:00:23) roam y -48
+\i (00:00:23) roam y -16
+\i (00:00:23) roam x -16
+\i (00:00:23) roam y -16
+\i (00:00:23) roam end
+\i (00:00:23) zoom in 1 
+\i (00:00:23) setwindow pcb
+\i (00:00:23) zoom in 951.151 1671.356
+\i (00:00:23) trapsize 5542
+\i (00:00:27) zoom out 1 
+\i (00:00:27) setwindow pcb
+\i (00:00:27) zoom out 874.669 1516.175
+\i (00:00:27) trapsize 11084
+\i (00:00:28) zoom in 1 
+\i (00:00:28) setwindow pcb
+\i (00:00:28) zoom in 925.657 1609.284
+\i (00:00:28) trapsize 5542
+\i (00:00:29) zoom out 1 
+\i (00:00:29) setwindow pcb
+\i (00:00:29) zoom out 934.525 1573.815
+\i (00:00:29) trapsize 11084
+\i (00:00:29) zoom out 1 
+\i (00:00:29) setwindow pcb
+\i (00:00:29) zoom out 936.741 1573.814
+\i (00:00:29) trapsize 22169
+\i (00:00:30) zoom in 1 
+\i (00:00:30) setwindow pcb
+\i (00:00:30) zoom in 1157.320 1365.428
+\i (00:00:30) trapsize 11084
+\i (00:00:35) zoom in 1 
+\i (00:00:35) setwindow pcb
+\i (00:00:35) zoom in 1239.345 713.667
+\i (00:00:35) trapsize 5542
+\i (00:35:08) xNet Vcc_3V3 
+\i (00:35:08) xrefdes C31 
+\i (00:35:08) xNet Gnd 
+\i (00:35:08) xrefdes C32 
+\i (00:35:08) xrefdes Y3 
+\i (00:35:08) xNet N17131432 
+\i (00:35:08) xNet N17131428 
+\i (00:35:08) xrefdes U5 
+\i (00:35:08) xrefdes R37 
+\i (00:35:08) xrefdes R38 
+\i (00:35:08) xNet Vcc_Bat 
+\i (00:35:08) xNet N17131490 
+\i (00:35:08) xrefdes R39 
+\i (00:35:08) xNet Stm32_Iic_Scl 
+\i (00:35:08) xNet N17131504 
+\i (00:35:08) xNet Stm32_Iic_Sda 
+\i (00:35:08) xNet N17131527 
+\i (00:35:08) xname_flush 
+\i (00:35:08) trapsize 10877
+\i (00:49:10) xname_flush 
+\i (00:49:43) xNet Gnd 
+\i (00:49:43) xrefdes J8 
+\i (00:49:43) xNet Vcc_Bat 
+\i (00:49:43) xname_flush 
+\i (00:49:43) trapsize 10877
+\i (00:49:44) xdehilite 
+\t (00:49:44) No elements found matching this filter.
+\i (00:49:44) xNet Gnd 
+\e (00:49:44) No command active
+\i (00:49:44) xrefdes J8 
+\e (00:49:44) No command active
+\i (00:49:44) xNet Vcc_Bat 
+\e (00:49:44) No command active
+\i (00:49:44) xname_flush 
+\e (00:49:44) No command active
+\i (00:49:44) done 
+\e (00:49:44) No command active
+\i (00:49:44) xhilite 
+\i (00:49:50) xrefdes Fb2 
+\t (00:49:50) Symbol and Component Instances are not selectable at this time.
+\i (00:49:50) xNet Vcc_3V3_A 
+\t (00:49:50) Nets are not selectable at this time.
+\i (00:49:50) xNet Vcc_3V3 
+\t (00:49:50) Nets are not selectable at this time.
+\i (00:49:50) xname_flush 
+\i (00:49:51) xrefdes Fb2 
+\t (00:49:51) Symbol and Component Instances are not selectable at this time.
+\i (00:49:51) xNet Vcc_3V3 
+\t (00:49:51) Nets are not selectable at this time.
+\i (00:49:51) xrefdes C30 
+\t (00:49:51) Symbol and Component Instances are not selectable at this time.
+\i (00:49:51) xrefdes C26 
+\t (00:49:51) Symbol and Component Instances are not selectable at this time.
+\i (00:49:51) xNet Vcc_3V3_A 
+\t (00:49:51) Nets are not selectable at this time.
+\i (00:49:51) xNet Gnd 
+\t (00:49:51) Nets are not selectable at this time.
+\i (00:49:51) xrefdes C25 
+\t (00:49:51) Symbol and Component Instances are not selectable at this time.
+\i (00:49:51) xname_flush 
+\i (00:49:54) xNet N17176733 
+\t (00:49:54) Nets are not selectable at this time.
+\i (00:49:54) xrefdes R43 
+\t (00:49:54) Symbol and Component Instances are not selectable at this time.
+\i (00:49:54) xNet Hall_In 
+\t (00:49:54) Nets are not selectable at this time.
+\i (00:49:54) xNet N17176975 
+\t (00:49:54) Nets are not selectable at this time.
+\i (00:49:54) xNet Gnd 
+\t (00:49:54) Nets are not selectable at this time.
+\i (00:49:54) xrefdes J9 
+\t (00:49:54) Symbol and Component Instances are not selectable at this time.
+\i (00:49:54) xrefdes R41 
+\t (00:49:54) Symbol and Component Instances are not selectable at this time.
+\i (00:49:54) xrefdes R42 
+\t (00:49:54) Symbol and Component Instances are not selectable at this time.
+\i (00:49:54) xname_flush 
+\i (00:49:56) xrefdes R43 
+\t (00:49:56) Symbol and Component Instances are not selectable at this time.
+\i (00:49:56) xrefdes J10 
+\t (00:49:56) Symbol and Component Instances are not selectable at this time.
+\i (00:49:56) xNet Vcc_3V3 
+\t (00:49:56) Nets are not selectable at this time.
+\i (00:49:56) xrefdes J11 
+\t (00:49:56) Symbol and Component Instances are not selectable at this time.
+\i (00:49:56) xNet Ntc_1 
+\t (00:49:56) Nets are not selectable at this time.
+\i (00:49:56) xNet Ntc_2 
+\t (00:49:56) Nets are not selectable at this time.
+\i (00:49:56) xrefdes R44 
+\t (00:49:56) Symbol and Component Instances are not selectable at this time.
+\i (00:49:56) xrefdes C33 
+\t (00:49:56) Symbol and Component Instances are not selectable at this time.
+\i (00:49:56) xrefdes R45 
+\t (00:49:56) Symbol and Component Instances are not selectable at this time.
+\i (00:49:56) xrefdes C34 
+\t (00:49:56) Symbol and Component Instances are not selectable at this time.
+\i (00:49:56) xrefdes J9 
+\t (00:49:56) Symbol and Component Instances are not selectable at this time.
+\i (00:49:56) xrefdes R41 
+\t (00:49:56) Symbol and Component Instances are not selectable at this time.
+\i (00:49:56) xrefdes R42 
+\t (00:49:56) Symbol and Component Instances are not selectable at this time.
+\i (00:49:56) xname_flush 
+\i (00:50:04) xNet Gnd 
+\t (00:50:04) Nets are not selectable at this time.
+\i (00:50:04) xrefdes J8 
+\t (00:50:04) Symbol and Component Instances are not selectable at this time.
+\i (00:50:04) xNet Vcc_Bat 
+\t (00:50:04) Nets are not selectable at this time.
+\i (00:50:04) xname_flush 
+\i (00:50:07) xNet N17176733 
+\t (00:50:07) Nets are not selectable at this time.
+\i (00:50:07) xrefdes R43 
+\t (00:50:07) Symbol and Component Instances are not selectable at this time.
+\i (00:50:07) xNet Hall_In 
+\t (00:50:07) Nets are not selectable at this time.
+\i (00:50:07) xNet N17176975 
+\t (00:50:07) Nets are not selectable at this time.
+\i (00:50:07) xNet Gnd 
+\t (00:50:07) Nets are not selectable at this time.
+\i (00:50:07) xrefdes J9 
+\t (00:50:07) Symbol and Component Instances are not selectable at this time.
+\i (00:50:07) xrefdes R41 
+\t (00:50:07) Symbol and Component Instances are not selectable at this time.
+\i (00:50:07) xrefdes R42 
+\t (00:50:07) Symbol and Component Instances are not selectable at this time.
+\i (00:50:07) xname_flush 
+\i (00:50:11) xNet Gnd 
+\t (00:50:11) Nets are not selectable at this time.
+\i (00:50:11) xrefdes J8 
+\t (00:50:11) Symbol and Component Instances are not selectable at this time.
+\i (00:50:11) xNet Vcc_Bat 
+\t (00:50:11) Nets are not selectable at this time.
+\i (00:50:11) xname_flush 
+\i (00:50:24) xNet Vcc_3V3 
+\t (00:50:24) Nets are not selectable at this time.
+\i (00:50:24) xNet Gnd 
+\t (00:50:24) Nets are not selectable at this time.
+\i (00:50:24) xname_flush 
+\i (00:50:53) xrefdes R30 
+\t (00:50:53) Symbol and Component Instances are not selectable at this time.
+\i (00:50:53) xNet N17142414 
+\t (00:50:53) Nets are not selectable at this time.
+\i (00:50:53) xNet N17142418 
+\t (00:50:53) Nets are not selectable at this time.
+\i (00:50:53) xrefdes C20 
+\t (00:50:53) Symbol and Component Instances are not selectable at this time.
+\i (00:50:53) xrefdes U3 
+\t (00:50:53) Symbol and Component Instances are not selectable at this time.
+\i (00:50:53) xNet Gnd 
+\t (00:50:53) Nets are not selectable at this time.
+\i (00:50:53) xrefdes J5 
+\t (00:50:53) Symbol and Component Instances are not selectable at this time.
+\i (00:50:53) xNet Current_Cmp- 
+\t (00:50:53) Nets are not selectable at this time.
+\i (00:50:53) xrefdes R26 
+\t (00:50:53) Symbol and Component Instances are not selectable at this time.
+\i (00:50:53) xNet Current_Cmp_Ctl 
+\t (00:50:53) Nets are not selectable at this time.
+\i (00:50:53) xrefdes R25 
+\t (00:50:53) Symbol and Component Instances are not selectable at this time.
+\i (00:50:53) xrefdes Vr2 
+\t (00:50:53) Symbol and Component Instances are not selectable at this time.
+\i (00:50:53) xname_flush 
+\i (00:50:55) xrefdes R47 
+\t (00:50:55) Symbol and Component Instances are not selectable at this time.
+\i (00:50:55) xNet N17142509 
+\t (00:50:55) Nets are not selectable at this time.
+\i (00:50:55) xNet N17142410 
+\t (00:50:55) Nets are not selectable at this time.
+\i (00:50:55) xNet N17142406 
+\t (00:50:55) Nets are not selectable at this time.
+\i (00:50:55) xrefdes C10 
+\t (00:50:55) Symbol and Component Instances are not selectable at this time.
+\i (00:50:55) xrefdes U3 
+\t (00:50:55) Symbol and Component Instances are not selectable at this time.
+\i (00:50:55) xrefdes R15 
+\t (00:50:55) Symbol and Component Instances are not selectable at this time.
+\i (00:50:55) xrefdes R16 
+\t (00:50:55) Symbol and Component Instances are not selectable at this time.
+\i (00:50:55) xNet Current_Cmp+ 
+\t (00:50:55) Nets are not selectable at this time.
+\i (00:50:55) xNet Vcc_3V3_A 
+\t (00:50:55) Nets are not selectable at this time.
+\i (00:50:55) xrefdes R22 
+\t (00:50:55) Symbol and Component Instances are not selectable at this time.
+\i (00:50:55) xrefdes C9 
+\t (00:50:55) Symbol and Component Instances are not selectable at this time.
+\i (00:50:55) xrefdes C8 
+\t (00:50:55) Symbol and Component Instances are not selectable at this time.
+\i (00:50:55) xNet Sample_Current 
+\t (00:50:55) Nets are not selectable at this time.
+\i (00:50:55) xNet Adc_Voltage 
+\t (00:50:55) Nets are not selectable at this time.
+\i (00:50:55) xrefdes R21 
+\t (00:50:55) Symbol and Component Instances are not selectable at this time.
+\i (00:50:55) xNet N17136078 
+\t (00:50:55) Nets are not selectable at this time.
+\i (00:50:55) xrefdes R19 
+\t (00:50:55) Symbol and Component Instances are not selectable at this time.
+\i (00:50:55) xNet Adc_Current 
+\t (00:50:55) Nets are not selectable at this time.
+\i (00:50:55) xrefdes R17 
+\t (00:50:55) Symbol and Component Instances are not selectable at this time.
+\i (00:50:55) xrefdes R24 
+\t (00:50:55) Symbol and Component Instances are not selectable at this time.
+\i (00:50:55) xNet Vcc_Ref_2V5 
+\t (00:50:55) Nets are not selectable at this time.
+\i (00:50:55) xrefdes R14 
+\t (00:50:55) Symbol and Component Instances are not selectable at this time.
+\i (00:50:55) xNet N17136061 
+\t (00:50:55) Nets are not selectable at this time.
+\i (00:50:55) xNet Vcc_In 
+\t (00:50:55) Nets are not selectable at this time.
+\i (00:50:55) xrefdes Vr1 
+\t (00:50:55) Symbol and Component Instances are not selectable at this time.
+\i (00:50:55) xrefdes R23 
+\t (00:50:55) Symbol and Component Instances are not selectable at this time.
+\i (00:50:55) xname_flush 
+\i (00:50:59) xrefdes R6 
+\t (00:50:59) Symbol and Component Instances are not selectable at this time.
+\i (00:50:59) xNet Vcc_3V3 
+\t (00:50:59) Nets are not selectable at this time.
+\i (00:50:59) xrefdes U1 
+\t (00:50:59) Symbol and Component Instances are not selectable at this time.
+\i (00:50:59) xrefdes C2 
+\t (00:50:59) Symbol and Component Instances are not selectable at this time.
+\i (00:50:59) xrefdes C3 
+\t (00:50:59) Symbol and Component Instances are not selectable at this time.
+\i (00:50:59) xname_flush 
+\i (00:51:01) xrefdes C36 
+\t (00:51:01) Symbol and Component Instances are not selectable at this time.
+\i (00:51:01) xname_flush 
+\i (00:53:05) xNet Gnd 
+\t (00:53:05) Nets are not selectable at this time.
+\i (00:53:05) xNet Vcc_3V3 
+\t (00:53:05) Nets are not selectable at this time.
+\i (00:53:05) xname_flush 
+\i (00:53:12) xNet Gnd 
+\t (00:53:12) Nets are not selectable at this time.
+\i (00:53:12) xrefdes R11 
+\t (00:53:12) Symbol and Component Instances are not selectable at this time.
+\i (00:53:12) xrefdes J4 
+\t (00:53:12) Symbol and Component Instances are not selectable at this time.
+\i (00:53:12) xNet Vcc_In 
+\t (00:53:12) Nets are not selectable at this time.
+\i (00:53:12) xrefdes J2 
+\t (00:53:12) Symbol and Component Instances are not selectable at this time.
+\i (00:53:12) xrefdes R13 
+\t (00:53:12) Symbol and Component Instances are not selectable at this time.
+\i (00:53:12) xNet Sample_Current 
+\t (00:53:12) Nets are not selectable at this time.
+\i (00:53:12) xname_flush 
+\i (00:59:39) xname_flush 
+\i (00:59:40) xname_flush 
+\i (00:59:41) xname_flush 
+\i (00:59:46) xrefdes R11 
+\t (00:59:46) Symbol and Component Instances are not selectable at this time.
+\i (00:59:46) xrefdes R13 
+\t (00:59:46) Symbol and Component Instances are not selectable at this time.
+\i (00:59:46) xname_flush 
+\i (01:00:52) xNet Gnd 
+\t (01:00:52) Nets are not selectable at this time.
+\i (01:00:52) xname_flush 
+\i (01:01:01) xNet Vcc_In 
+\t (01:01:01) Nets are not selectable at this time.
+\i (01:01:01) xname_flush 
+\i (01:01:05) xNet Vcc_In 
+\t (01:01:05) Nets are not selectable at this time.
+\i (01:01:05) xname_flush 
+\i (01:01:07) xNet Sample_Current 
+\t (01:01:07) Nets are not selectable at this time.
+\i (01:01:07) xname_flush 
+\i (01:01:18) xNet Gnd 
+\t (01:01:18) Nets are not selectable at this time.
+\i (01:01:18) xrefdes J4 
+\t (01:01:18) Symbol and Component Instances are not selectable at this time.
+\i (01:01:18) xNet Vcc_In 
+\t (01:01:18) Nets are not selectable at this time.
+\i (01:01:18) xname_flush 
+\i (01:01:28) xNet Gnd 
+\t (01:01:28) Nets are not selectable at this time.
+\i (01:01:28) xrefdes J2 
+\t (01:01:28) Symbol and Component Instances are not selectable at this time.
+\i (01:01:28) xname_flush 
+\i (01:01:31) xNet Gnd 
+\t (01:01:31) Nets are not selectable at this time.
+\i (01:01:31) xrefdes J2 
+\t (01:01:31) Symbol and Component Instances are not selectable at this time.
+\i (01:01:31) xname_flush 
+\i (01:01:35) xNet Gnd 
+\t (01:01:35) Nets are not selectable at this time.
+\i (01:01:35) xrefdes J4 
+\t (01:01:35) Symbol and Component Instances are not selectable at this time.
+\i (01:01:35) xNet Vcc_In 
+\t (01:01:35) Nets are not selectable at this time.
+\i (01:01:35) xrefdes J2 
+\t (01:01:35) Symbol and Component Instances are not selectable at this time.
+\i (01:01:35) xname_flush 
+\i (01:01:39) xNet Gnd 
+\t (01:01:39) Nets are not selectable at this time.
+\i (01:01:39) xrefdes J4 
+\t (01:01:39) Symbol and Component Instances are not selectable at this time.
+\i (01:01:39) xNet Vcc_In 
+\t (01:01:39) Nets are not selectable at this time.
+\i (01:01:39) xrefdes J2 
+\t (01:01:39) Symbol and Component Instances are not selectable at this time.
+\i (01:01:39) xname_flush 
+\i (01:02:17) xNet Gnd 
+\t (01:02:17) Nets are not selectable at this time.
+\i (01:02:17) xname_flush 
+\i (01:02:20) xNet Gnd 
+\t (01:02:20) Nets are not selectable at this time.
+\i (01:02:20) xrefdes J2 
+\t (01:02:20) Symbol and Component Instances are not selectable at this time.
+\i (01:02:20) xname_flush 
+\i (01:03:12) xNet Sample_Current 
+\t (01:03:12) Nets are not selectable at this time.
+\i (01:03:12) xname_flush 
+\i (01:03:23) xrefdes J2 
+\t (01:03:23) Symbol and Component Instances are not selectable at this time.
+\i (01:03:23) xname_flush 
+\i (01:03:25) xNet Gnd 
+\t (01:03:25) Nets are not selectable at this time.
+\i (01:03:25) xrefdes J2 
+\t (01:03:25) Symbol and Component Instances are not selectable at this time.
+\i (01:03:25) xname_flush 
+\i (01:03:40) xNet Sample_Current 
+\t (01:03:40) Nets are not selectable at this time.
+\i (01:03:40) xname_flush 
+\i (01:03:41) xNet Sample_Current 
+\t (01:03:41) Nets are not selectable at this time.
+\i (01:03:41) xname_flush 
+\i (01:03:42) xNet Sample_Current 
+\t (01:03:42) Nets are not selectable at this time.
+\i (01:03:42) xname_flush 
+\i (01:03:54) xNet Sample_Current 
+\t (01:03:54) Nets are not selectable at this time.
+\i (01:03:54) xname_flush 
+\i (01:03:57) xNet Sample_Current 
+\t (01:03:57) Nets are not selectable at this time.
+\i (01:03:57) xname_flush 
+\i (01:03:59) xNet Sample_Current 
+\t (01:03:59) Nets are not selectable at this time.
+\i (01:03:59) xname_flush 
+\i (01:04:12) xNet Vcc_In 
+\t (01:04:12) Nets are not selectable at this time.
+\i (01:04:12) xname_flush 
+\i (01:04:30) xNet Vcc_In 
+\t (01:04:30) Nets are not selectable at this time.
+\i (01:04:30) xname_flush 
+\i (01:04:40) xNet Gnd 
+\t (01:04:40) Nets are not selectable at this time.
+\i (01:04:40) xname_flush 
+\i (01:04:50) xname_flush 
+\i (01:04:56) xNet Gnd 
+\t (01:04:56) Nets are not selectable at this time.
+\i (01:04:56) xrefdes J2 
+\t (01:04:56) Symbol and Component Instances are not selectable at this time.
+\i (01:04:56) xNet Vcc_In 
+\t (01:04:56) Nets are not selectable at this time.
+\i (01:04:56) xname_flush 
+\i (01:04:58) xNet Gnd 
+\t (01:04:58) Nets are not selectable at this time.
+\i (01:04:58) xrefdes J4 
+\t (01:04:58) Symbol and Component Instances are not selectable at this time.
+\i (01:04:58) xNet Vcc_In 
+\t (01:04:58) Nets are not selectable at this time.
+\i (01:04:58) xname_flush 
+\i (01:05:05) xNet Gnd 
+\t (01:05:05) Nets are not selectable at this time.
+\i (01:05:05) xrefdes J2 
+\t (01:05:05) Symbol and Component Instances are not selectable at this time.
+\i (01:05:05) xNet Vcc_In 
+\t (01:05:05) Nets are not selectable at this time.
+\i (01:05:05) xname_flush 
+\i (01:05:21) xname_flush 
+\i (01:05:21) xname_flush 
+\i (01:05:23) xname_flush 
+\i (01:05:24) xname_flush 
+\i (01:05:26) xNet Gnd 
+\t (01:05:26) Nets are not selectable at this time.
+\i (01:05:26) xname_flush 
+\i (01:05:27) xname_flush 
+\i (01:05:28) xNet Gnd 
+\t (01:05:28) Nets are not selectable at this time.
+\i (01:05:28) xname_flush 
+\i (01:05:31) xNet Gnd 
+\t (01:05:31) Nets are not selectable at this time.
+\i (01:05:31) xrefdes J4 
+\t (01:05:31) Symbol and Component Instances are not selectable at this time.
+\i (01:05:31) xNet Vcc_In 
+\t (01:05:31) Nets are not selectable at this time.
+\i (01:05:31) xname_flush 
+\i (01:05:44) xNet Sample_Current 
+\t (01:05:44) Nets are not selectable at this time.
+\i (01:05:44) xname_flush 
+\i (01:06:34) xNet Sample_Current 
+\t (01:06:34) Nets are not selectable at this time.
+\i (01:06:34) xname_flush 
+\i (01:06:38) xNet Sample_Current 
+\t (01:06:38) Nets are not selectable at this time.
+\i (01:06:38) xname_flush 
+\i (01:07:20) xNet Gnd 
+\t (01:07:20) Nets are not selectable at this time.
+\i (01:07:20) xname_flush 
+\i (01:07:44) xNet Gnd 
+\t (01:07:44) Nets are not selectable at this time.
+\i (01:07:44) xname_flush 
+\i (01:07:52) xname_flush 
+\i (01:08:29) xNet Gnd 
+\t (01:08:29) Nets are not selectable at this time.
+\i (01:08:29) xname_flush 
+\i (01:08:43) xNet Gnd 
+\t (01:08:43) Nets are not selectable at this time.
+\i (01:08:43) xname_flush 
+\i (01:08:50) xNet Gnd 
+\t (01:08:50) Nets are not selectable at this time.
+\i (01:08:50) xname_flush 
+\i (01:09:05) xNet Sample_Current 
+\t (01:09:05) Nets are not selectable at this time.
+\i (01:09:05) xNet Gnd 
+\t (01:09:05) Nets are not selectable at this time.
+\i (01:09:05) xname_flush 
+\i (01:09:18) xNet Vcc_In 
+\t (01:09:18) Nets are not selectable at this time.
+\i (01:09:18) xNet Sample_Current 
+\t (01:09:18) Nets are not selectable at this time.
+\i (01:09:18) xname_flush 
+\i (01:09:23) xNet Vcc_In 
+\t (01:09:23) Nets are not selectable at this time.
+\i (01:09:23) xname_flush 
+\i (01:09:24) xNet Vcc_In 
+\t (01:09:24) Nets ar

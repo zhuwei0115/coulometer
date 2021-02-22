@@ -1,0 +1,22 @@
+\t (00:00:00) allegro 16.6-2015 S112 (v16-6-112JB) Windows 32
+\t (00:00:00)     Journal start - Thu Jul 16 14:47:57 2020
+\t (00:00:00)         Host=ZHUWEI User=Administrator Pid=13976 CPUs=8
+\t (00:00:00) CmdLine= E:\Cadence\SPB_16.6\tools\pcb\bin\allegro.exe F:\DIY\01.COULOMETER\coulometer\Hardware\V1.0\PCB\COULOMETER_BOARD_V1.0.brd
+\t (00:00:00) 
+   (00:00:01) Loading axlcore.cxt 
+\t (00:00:01) Opening existing design...
+\e (00:00:01) ERROR(SPMHDB-180): Design revision 17.x is newer than current program version.
+\e (00:00:01) ERROR(SPMHDB-180): Design revision 17.x is newer than current program version.
+\i (00:00:06) fillin confirm
+\t (00:00:06) Starting new design...
+\i (00:00:07) trapsize 641
+\i (00:00:07) trapsize 629
+\i (00:00:07) trapsize 643
+\i (00:00:07) trapsize 648
+\i (00:00:07) trapsize 1059
+\t (00:00:08) Begin Load EDA365 Skill...
+\t (00:00:08) >>EDA365 Skill V2.5 加载成功!
+\t (00:00:08) >>菜单快捷键CTRL+E
+\i (00:00:08) generaledit 
+\i (00:00:10) exit 
+\t (00:00:10)     Journal end - Thu Jul 16 14:48:07 2020

@@ -1,0 +1,16 @@
+\t (00:00:01) allegro 16.6-2015 S112 (v16-6-112JB) Windows 32
+\t (00:00:01)     Journal start - Mon Jan 18 19:13:31 2021
+\t (00:00:01)         Host=ZHUWEI User=Administrator Pid=17004 CPUs=8
+\t (00:00:01) CmdLine= E:\Cadence\SPB_16.6\tools\pcb\bin\allegro.exe F:\DIY\01.COULOMETER\coulometer\Hardware\V1.0\PCB\COULOMETER_BOARD_V1.0.brd
+\t (00:00:01) 
+\t (00:00:01) Opening existing design...
+\e (00:00:01) ERROR(SPMHDB-180): Design revision 17.x is newer than current program version.
+\e (00:00:01) ERROR(SPMHDB-180): Design revision 17.x is newer than current program version.
+\i (00:00:02) fillin confirm
+\t (00:00:02) Starting new design...
+\i (00:00:03) trapsize 641
+\i (00:00:03) trapsize 629
+\i (00:00:03) trapsize 643
+\i (00:00:04) trapsize 1059
+\i (00:00:04) exit 
+\t (00:00:05)     Journal end - Mon Jan 18 19:13:35 2021
