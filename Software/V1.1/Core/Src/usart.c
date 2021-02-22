@@ -102,6 +102,20 @@ void HAL_UART_MspDeInit(UART_HandleTypeDef* uartHandle)
 }
 
 /* USER CODE BEGIN 1 */
+/* USER CODE BEGIN 1 */
+#if 1
+#include <stdio.h>
+
+int fputc(int ch, FILE *stream)
+{
+    /* 堵塞判断串口是否发送完成 */
+    while((USART1->ISR & 0X40) == 0);
+
+    /* 串口发送完成，将该字符发送 */
+    USART1->TDR = (uint8_t) ch;
+    return ch;
+}
+#endif
 
 /* USER CODE END 1 */
 

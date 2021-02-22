@@ -92,6 +92,10 @@ int main(void)
   MX_USART1_UART_Init();
   MX_TIM1_Init();
   /* USER CODE BEGIN 2 */
+//  printf("Hello, i am %s\n", "mculover666");
+  printf("Test int: i = %d", 100);
+  printf("Test float: i = %f", 1.234);
+  printf("Test hex: i = 0x%2x",100);
 
   /* USER CODE END 2 */
 
@@ -100,9 +104,9 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-		HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_4);
+		HAL_GPIO_TogglePin(LED0_GPIO_Port, LED0_Pin);
 		HAL_Delay(500);
-		HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);
+		HAL_GPIO_TogglePin(LED1_GPIO_Port, LED1_Pin);
 		HAL_Delay(500);
     /* USER CODE BEGIN 3 */
   }
