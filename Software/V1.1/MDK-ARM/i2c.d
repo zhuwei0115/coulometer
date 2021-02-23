@@ -6,15 +6,15 @@ i2c.o: ..\Core\Src\i2c.c ..\Core\Inc\i2c.h ..\Core\Inc\main.h \
   ..\Drivers\CMSIS\Device\ST\STM32F0xx\Include\stm32f0xx.h \
   ..\Drivers\CMSIS\Device\ST\STM32F0xx\Include\stm32f051x8.h \
   ..\Drivers\CMSIS\Include\core_cm0.h \
-  M:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdint.h \
+  E:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdint.h \
   ..\Drivers\CMSIS\Include\cmsis_version.h \
   ..\Drivers\CMSIS\Include\cmsis_compiler.h \
   ..\Drivers\CMSIS\Include\cmsis_armclang.h \
-  M:\Keil_v5\ARM\ARMCLANG\Bin\..\include\arm_compat.h \
-  M:\Keil_v5\ARM\ARMCLANG\Bin\..\include\arm_acle.h \
+  E:\Keil_v5\ARM\ARMCLANG\Bin\..\include\arm_compat.h \
+  E:\Keil_v5\ARM\ARMCLANG\Bin\..\include\arm_acle.h \
   ..\Drivers\CMSIS\Device\ST\STM32F0xx\Include\system_stm32f0xx.h \
   ..\Drivers\STM32F0xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h \
-  M:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stddef.h \
+  E:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stddef.h \
   ..\Drivers\STM32F0xx_HAL_Driver\Inc\stm32f0xx_hal_rcc_ex.h \
   ..\Drivers\STM32F0xx_HAL_Driver\Inc\stm32f0xx_hal_gpio.h \
   ..\Drivers\STM32F0xx_HAL_Driver\Inc\stm32f0xx_hal_gpio_ex.h \

@@ -36,6 +36,10 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
+#define ADS1015_Config_AIN0 0xc083
+#define ADS1015_Config_AIN1 0xd083
+#define ADS1015_Config_AIN2 0xe083
+#define ADS1015_Config_AIN3 0xf083
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -67,7 +71,8 @@ void SystemClock_Config(void);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-	uint8_t Value[2];
+	uint8_t Value[8];
+	uint8_t Config[2];
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -109,8 +114,40 @@ int main(void)
 		HAL_GPIO_TogglePin(LED1_GPIO_Port, LED1_Pin);
 		HAL_Delay(500);
 		
-		ADS1015_Read_nBytes(&Value, 0x1, 0x1);
-		printf("ADS1015 0x01 address value is : %d\n\r",Value);
+		
+		Config[0] = (uint8_t)(ADS1015_Config_AIN0 >> 8) ;
+		Config[1] = (uint8_t)(ADS1015_Config_AIN0 & 0xff) ;
+		ADS1015_Write_nBytes(Config, 0x01, 0x02);
+		HAL_Delay(10);
+		ADS1015_Read_nBytes(Value, 0x0, 0x2);
+		printf("ADS1015 AN0 value is : 0x%x%x\n\r",Value[0],Value[1]);
+		
+		Config[0] = (uint8_t)(ADS1015_Config_AIN1 >> 8) ;
+		Config[1] = (uint8_t)(ADS1015_Config_AIN1 & 0xff) ;
+		ADS1015_Write_nBytes(Config, 0x01, 0x02);
+		HAL_Delay(10);
+		ADS1015_Read_nBytes(Value, 0x0, 0x2);
+		printf("ADS1015 AN1 value is : 0x%x%x\n\r",Value[0],Value[1]);		
+
+		Config[0] = (uint8_t)(ADS1015_Config_AIN2 >> 8) ;
+		Config[1] = (uint8_t)(ADS1015_Config_AIN2 & 0xff) ;
+		ADS1015_Write_nBytes(Config, 0x01, 0x02);
+		HAL_Delay(10);
+		ADS1015_Read_nBytes(Value, 0x0, 0x2);
+		printf("ADS1015 AN2 value is : 0x%x%x\n\r",Value[0],Value[1]);
+		
+		Config[0] = (uint8_t)(ADS1015_Config_AIN3 >> 8) ;
+		Config[1] = (uint8_t)(ADS1015_Config_AIN3 & 0xff) ;
+		ADS1015_Write_nBytes(Config, 0x01, 0x02);
+		HAL_Delay(10);
+		ADS1015_Read_nBytes(Value, 0x0, 0x2);
+		printf("ADS1015 AN3 value is : 0x%x%x\n\r",Value[0],Value[1]);			
+		
+		
+		ADS1015_Read_nBytes(Value+2, 0x1, 0x2);
+		printf("ADS1015 0x01 address value is : 0x%x%x\n\r",Value[2],Value[3]);
+		ADS1015_Read_nBytes(Value+4, 0x2, 0x2);
+		
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
