@@ -43,6 +43,9 @@ void MX_I2C1_Init(void);
 int16_t ADS1015_Write_nBytes(uint8_t *data, uint16_t addr, uint16_t length);
 int16_t ADS1015_Read_nBytes(uint8_t *data, uint16_t addr, uint16_t length);
 
+int16_t RX8025_Write_nBytes(uint8_t *data, uint16_t addr, uint16_t length);
+int16_t RX8025_Read_nBytes(uint8_t *data, uint16_t addr, uint16_t length);
+
 /* USER CODE END Prototypes */
 
 #ifdef __cplusplus
