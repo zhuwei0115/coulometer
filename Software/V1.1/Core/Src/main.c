@@ -74,6 +74,7 @@ int main(void)
 	uint8_t Value[8];
 	uint8_t Config[2];
 	uint8_t Seconds[1];	
+	uint8_t temp1,temp2;
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -128,10 +129,13 @@ int main(void)
 		ADS1015_Read_nBytes(Value+4, 0x2, 0x2);
 
 		RX8025_Read_nBytes(Seconds, 0x0, 1);
-		printf("Address 0x00 value is : 0x%x\n\r",Seconds[0]);		
+		printf("Address 0x00 value is : 0x%x\n\r",Seconds[0]);	
+		temp1 = Seconds[0];
+		temp2 = Seconds[0];
 //		Seconds[0] = ((Seconds[0]&0x70)>>4)*10 + Seconds[0]&0x0f;	
-		Seconds[0] = 50 + Seconds[0]&0x0f;	
-		printf("Current seconds is : 0x%xs\n\r",Seconds[0]);
+		temp1 = ((temp1&0x70)>>4)*10;
+		temp2 = temp2&0x0f;
+		printf("Current seconds is : %us\n\r",temp1+temp2);
 
     /* USER CODE BEGIN 3 */
   }
