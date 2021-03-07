@@ -26,7 +26,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "oled.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -75,6 +75,8 @@ int main(void)
 	uint8_t Config[2];
 	uint8_t Seconds[1];	
 	uint8_t temp1,temp2;
+	
+	Sys_StausTypeDef Sys_Staus1;
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -104,6 +106,34 @@ int main(void)
   printf("Test float: i = %f\n\r", 1.234);
   printf("Test hex: i = 0x%2x\n\r",100);
 
+	uint8_t A[]="hellow world !!";
+	//初始化oled屏幕
+  OLED_Init();
+	//开启OLED显示    
+	OLED_Display_On();
+	//清屏
+	OLED_Clear();
+//	OLED_ShowNum(10,10,10,8,8);
+//	OLED_ShowChar(0, 0,'C',16);
+//	OLED_ShowString(0,0,A,sizeof(A),0);
+//	OLED_ShowString(0,2,A,sizeof(A));
+//	OLED_ShowString(0,4,A,sizeof(A));
+//	OLED_ShowString(0,6,A,sizeof(A));
+		//清行
+//	OLED_Clearrow(2);
+//	OLED_Clearrow(3);
+//	OLED_DrawBMP(0, 0,128,8,BMP3);
+	Sys_Staus1.RTC_Hours = 23;
+	Sys_Staus1.RTC_Minutes = 59;
+	Sys_Staus1.RTC_Seconds = 59;
+	Sys_Staus1.Total_Capicity = 400;
+	Sys_Staus1.Voltage = 720;
+	Sys_Staus1.Current = 100;	
+	Sys_Staus1.Chrg_or_Dischrg = 1;
+	Sys_Staus1.Power = 720; 
+	OLED_Display_Main(Sys_Staus1);
+//	OLED_DrawBMP(0, 0,128, 64,BMP4);
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -112,9 +142,9 @@ int main(void)
   {
     /* USER CODE END WHILE */
 		HAL_GPIO_TogglePin(LED0_GPIO_Port, LED0_Pin);
-		HAL_Delay(500);
+//		HAL_Delay(500);
 		HAL_GPIO_TogglePin(LED1_GPIO_Port, LED1_Pin);
-		HAL_Delay(500);
+//		HAL_Delay(500);
 		
 		
 		Config[0] = (uint8_t)(ADS1015_Config_AIN0 >> 8) ;
@@ -136,7 +166,8 @@ int main(void)
 		temp1 = ((temp1&0x70)>>4)*10;
 		temp2 = temp2&0x0f;
 		printf("Current seconds is : %us\n\r",temp1+temp2);
-
+		Sys_Staus1.RTC_Seconds = temp1+temp2;
+		OLED_Display_Main(Sys_Staus1);
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
