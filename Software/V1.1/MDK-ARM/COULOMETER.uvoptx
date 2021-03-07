@@ -152,6 +152,7 @@
         <Bp>
           <Number>0</Number>
           <Type>0</Type>
+<<<<<<< Updated upstream
           <LineNumber>295</LineNumber>
           <EnabledFlag>1</EnabledFlag>
           <Address>0</Address>
@@ -217,6 +218,9 @@
           <Number>4</Number>
           <Type>0</Type>
           <LineNumber>131</LineNumber>
+=======
+          <LineNumber>112</LineNumber>
+>>>>>>> Stashed changes
           <EnabledFlag>1</EnabledFlag>
           <Address>0</Address>
           <ByteObject>0</ByteObject>
@@ -230,9 +234,15 @@
           <Expression></Expression>
         </Bp>
         <Bp>
+<<<<<<< Updated upstream
           <Number>5</Number>
           <Type>0</Type>
           <LineNumber>132</LineNumber>
+=======
+          <Number>1</Number>
+          <Type>0</Type>
+          <LineNumber>113</LineNumber>
+>>>>>>> Stashed changes
           <EnabledFlag>1</EnabledFlag>
           <Address>0</Address>
           <ByteObject>0</ByteObject>
