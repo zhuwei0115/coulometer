@@ -1,4 +1,4 @@
-main.o: ..\Core\Src\main.c ..\Core\Inc\main.h \
+ads1015.o: ..\Core\Src\ads1015.c ..\Core\Inc\i2c.h ..\Core\Inc\main.h \
   ..\Drivers\STM32F0xx_HAL_Driver\Inc\stm32f0xx_hal.h \
   ..\Core\Inc\stm32f0xx_hal_conf.h \
   ..\Drivers\STM32F0xx_HAL_Driver\Inc\stm32f0xx_hal_rcc.h \
@@ -32,6 +32,4 @@ main.o: ..\Core\Src\main.c ..\Core\Inc\main.h \
   ..\Drivers\STM32F0xx_HAL_Driver\Inc\stm32f0xx_hal_tim_ex.h \
   ..\Drivers\STM32F0xx_HAL_Driver\Inc\stm32f0xx_hal_uart.h \
   ..\Drivers\STM32F0xx_HAL_Driver\Inc\stm32f0xx_hal_uart_ex.h \
-  ..\Core\Inc\i2c.h ..\Core\Inc\main.h ..\Core\Inc\tim.h \
-  ..\Core\Inc\usart.h ..\Core\Inc\gpio.h ..\Core\Inc\oled.h \
-  ..\Core\Inc\i2c.h ..\Core\Inc\ads1015.h
+  ..\Core\Inc\ads1015.h

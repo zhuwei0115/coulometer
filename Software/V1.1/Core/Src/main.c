@@ -27,6 +27,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "oled.h"
+#include "ads1015.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -36,10 +37,7 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-#define ADS1015_Config_AIN0 0xc083
-#define ADS1015_Config_AIN1 0xd083
-#define ADS1015_Config_AIN2 0xe083
-#define ADS1015_Config_AIN3 0xf083
+
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -61,7 +59,7 @@ void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
+Sys_StausTypeDef Sys_Staus1;
 /* USER CODE END 0 */
 
 /**
@@ -71,12 +69,8 @@ void SystemClock_Config(void);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-	uint8_t Value[8];
-	uint8_t Config[2];
 	uint8_t Seconds[1];	
 	uint8_t temp1,temp2;
-	
-	Sys_StausTypeDef Sys_Staus1;
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -127,7 +121,7 @@ int main(void)
 	Sys_Staus1.RTC_Minutes = 59;
 	Sys_Staus1.RTC_Seconds = 59;
 	Sys_Staus1.Total_Capicity = 400;
-	Sys_Staus1.Voltage = 720;
+//	Sys_Staus1.Voltage = 720;
 	Sys_Staus1.Current = 100;	
 	Sys_Staus1.Chrg_or_Dischrg = 1;
 	Sys_Staus1.Power = 720; 
@@ -146,27 +140,17 @@ int main(void)
 		HAL_GPIO_TogglePin(LED1_GPIO_Port, LED1_Pin);
 //		HAL_Delay(500);
 		
-		
-		Config[0] = (uint8_t)(ADS1015_Config_AIN0 >> 8) ;
-		Config[1] = (uint8_t)(ADS1015_Config_AIN0 & 0xff) ;
-		ADS1015_Write_nBytes(Config, 0x01, 0x02);
-		HAL_Delay(10);
-		ADS1015_Read_nBytes(Value, 0x0, 0x2);
-		printf("ADS1015 AN0 value is : 0x%x%x\n\r",Value[0],Value[1]);
-		
-		ADS1015_Read_nBytes(Value+2, 0x1, 0x2);
-		printf("ADS1015 0x01 address value is : 0x%x%x\n\r",Value[2],Value[3]);
-		ADS1015_Read_nBytes(Value+4, 0x2, 0x2);
 
-		RX8025_Read_nBytes(Seconds, 0x0, 1);
-		printf("Address 0x00 value is : 0x%x\n\r",Seconds[0]);	
-		temp1 = Seconds[0];
-		temp2 = Seconds[0];
-//		Seconds[0] = ((Seconds[0]&0x70)>>4)*10 + Seconds[0]&0x0f;	
-		temp1 = ((temp1&0x70)>>4)*10;
-		temp2 = temp2&0x0f;
-		printf("Current seconds is : %us\n\r",temp1+temp2);
-		Sys_Staus1.RTC_Seconds = temp1+temp2;
+//		RX8025_Read_nBytes(Seconds, 0x0, 1);
+//		printf("Address 0x00 value is : 0x%x\n\r",Seconds[0]);	
+//		temp1 = Seconds[0];
+//		temp2 = Seconds[0];
+////		Seconds[0] = ((Seconds[0]&0x70)>>4)*10 + Seconds[0]&0x0f;	
+//		temp1 = ((temp1&0x70)>>4)*10;
+//		temp2 = temp2&0x0f;
+//		printf("Current seconds is : %us\n\r",temp1+temp2);
+//		Sys_Staus1.RTC_Seconds = temp1+temp2;
+		ADS1015_Value_Process();
 		OLED_Display_Main(Sys_Staus1);
     /* USER CODE BEGIN 3 */
   }

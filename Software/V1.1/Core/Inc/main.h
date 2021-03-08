@@ -84,6 +84,26 @@ void Error_Handler(void);
 #define BT_STATE_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */
 
+//系统状态
+typedef struct 
+{
+	uint8_t RTC_Hours;				//实时时钟 时
+	uint8_t RTC_Minutes;			//实时时钟 分
+	uint8_t RTC_Seconds;			//实时时钟 秒	
+	uint8_t Run_Hours;				//运行时钟 时
+	uint8_t Run_Minutes;			//运行时钟 分
+	uint8_t Run_Seconds;			//运行时钟 秒
+	uint16_t Total_Capicity;			//电池最大总容量
+	uint16_t Current_Capicity;		//电池当前容量
+	uint8_t SOC;				//电池剩余电量
+	uint16_t Voltage;			//电池电压
+	uint16_t Current;			//放电或充电电流
+	uint16_t Power;			//当前功率
+	uint8_t Chrg_or_Dischrg;			//运行时钟 分
+}Sys_StausTypeDef;
+
+extern Sys_StausTypeDef Sys_Staus1;
+
 /* USER CODE END Private defines */
 
 #ifdef __cplusplus

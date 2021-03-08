@@ -120,23 +120,6 @@ void HAL_I2C_MspDeInit(I2C_HandleTypeDef* i2cHandle)
 
 /* USER CODE BEGIN 1 */
 
-int16_t ADS1015_Write_nBytes(uint8_t *data, uint16_t addr, uint16_t length)
-{
-	if( HAL_I2C_Mem_Write( &hi2c1, ADDR_ADS1015_Write, addr, I2C_MEMADD_SIZE_8BIT, data, length, 1000 ) == HAL_OK )
-			return 0;
-	else
-			return -1;
-}
- 
-int16_t ADS1015_Read_nBytes(uint8_t *data, uint16_t addr, uint16_t length)
-{
-	if( HAL_I2C_Mem_Read( &hi2c1, ADDR_ADS1015_Read, addr, I2C_MEMADD_SIZE_8BIT, data, length, 1000 ) == HAL_OK )
-			return 0;
-	else
-			return -1;
-}
-
-
 int16_t RX8025_Write_nBytes(uint8_t *data, uint16_t addr, uint16_t length)
 {
 	if( HAL_I2C_Mem_Write( &hi2c1, ADDR_RX8025_Write, addr, I2C_MEMADD_SIZE_8BIT, data, length, 1000 ) == HAL_OK )
