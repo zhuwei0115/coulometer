@@ -259,9 +259,10 @@ void OLED_Display_Main(Sys_StausTypeDef Sys_Staus)
 	OLED_ShowChar(0,2,'U',16,1);
 	OLED_ShowChar(8,2,'=',16,1);
 	OLED_ShowChar(16,2,' ',16,1);
-	OLED_ShowNum(24,2,Sys_Staus.Voltage/10,2,16,1);
+	OLED_ShowNum(24,2,Sys_Staus.Voltage/100,2,16,1);
 	OLED_ShowChar(40,2,'.',16,1);
-	OLED_ShowNum(48,2,Sys_Staus.Voltage%10,1,16,1);
+	OLED_ShowNum(48,2,Sys_Staus.Voltage/10,1,16,1);
+//	OLED_ShowNum(56,2,Sys_Staus.Voltage%10,1,16,1);
 	OLED_ShowChar(56,2,' ',16,1);
 	OLED_ShowChar(64,2,'V',16,1);
 	
@@ -276,9 +277,9 @@ void OLED_Display_Main(Sys_StausTypeDef Sys_Staus)
 		OLED_ShowChar(16,4,' ',16,1);
 	else
 		OLED_ShowChar(16,4,'-',16,1);
-	OLED_ShowNum(24,4,Sys_Staus.Current/10,2,16,1);
+	OLED_ShowNum(24,4,Sys_Staus.Current/100,2,16,1);
 	OLED_ShowChar(40,4,'.',16,1);
-	OLED_ShowNum(48,4,Sys_Staus.Current%10,1,16,1);
+	OLED_ShowNum(48,4,Sys_Staus.Current/10,1,16,1);
 	OLED_ShowChar(56,4,' ',16,1);
 	OLED_ShowChar(64,4,'A',16,1);
 	

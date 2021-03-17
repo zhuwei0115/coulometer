@@ -74,15 +74,31 @@ void ADS1015_Read_AinX(uint8_t *Value,uint8_t Channel)
 void ADS1015_Value_Process(void)
 {
 	uint8_t Value[2];
-	uint16_t temp;
+	uint16_t temp,temp_5V;
 	ADS1015_Read_AinX(Value,Ain_Input_Voltgage);
-	printf("ADS1015 AN0 value is : 0x%x%x\n\r",Value[0],Value[1]);
+	printf("ADS1015 AN1 value is : 0x%x%x\n\r",Value[0],Value[1]);
 	temp = (Value[0]<<8)+Value[1];	
 	temp = temp >>4;   //低4位无效
-	temp = temp;
-	printf("ADS1015 AN1 value is : 0x%x\n\r",temp);
+	temp = (temp*3*1042)/469;
+	printf("System Input Voltage is : %dV\n\r",temp);
 	Sys_Staus1.Voltage = temp;
+
+	ADS1015_Read_AinX(Value,Ain_Input_5V);
+	printf("ADS1015 AN3 value is : 0x%x%x\n\r",Value[0],Value[1]);
+	temp = (Value[0]<<8)+Value[1];	
+	temp = temp >>4;   //低4位无效
+	temp = temp*3;
+	temp_5V = temp;
+	printf("System 5V Voltage is : %dV\n\r",temp);
+//	Sys_Staus1.Voltage = temp;
 	
+	ADS1015_Read_AinX(Value,Ain_Input_Current);
+	printf("ADS1015 AN2 value is : 0x%x%x\n\r",Value[0],Value[1]);
+	temp = (Value[0]<<8)+Value[1];	
+	temp = temp >>4;   //低4位无效
+	temp = temp*3;
+	printf("System Input Current is : %dV\n\r",temp);
+	Sys_Staus1.Current = (temp-temp_5V/2)/40;
 }
 
 
